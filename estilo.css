@@ -1,0 +1,1747 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #111;
+}
+
+/* Top rojo con redes e idiomas */
+.top-bar {
+  background-color: #c8102e;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 6px 20px;
+  font-size: 14px;
+}
+header {
+    width: 100%;
+    font-family: var(--fuente-principal);
+    background-color: var(--color-fondo-claro);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; 
+    top: 0;          
+    left: 0;         
+    z-index: 1000;   
+}
+.top-bar a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 6px;
+  transition: 0.3s;
+}
+
+.top-bar a:hover {
+  color: #ddd;
+}
+
+.socials i {
+  font-size: 15px;
+}
+
+/* Navbar transparente */
+.navbar, .navbar-responsive {
+  position: fixed; 
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  z-index: 10;
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar2 {
+  position: fixed; 
+  background-color: white; 
+  color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  width: 100%;
+  z-index: 10;
+  font-family: 'Staatliches', sans-serif;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.navbar,
+.navbar a,
+.logo {
+  font-family: 'Staatliches', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.blanc{
+  color: #fff;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 60px; 
+  color: white;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-links a:hover {
+  color: #c8102e;
+}
+/* ----------------------------------------------------------------------------------------------- */
+/* MENU DESPLEGABLE */
+/* Contenedor del dropdown */
+.dropdown {
+position: relative;
+}
+
+/* Enlace principal */
+.dropdown > a {
+cursor: pointer;
+}
+
+/* Submenú */
+.submenu {
+position: absolute;
+top: 120%;
+left: 0;
+background-color: rgba(0, 0, 0, 0.75); /* negro más transparente */
+list-style: none;
+padding: 6px 0;
+margin: 0;
+min-width: 200px;
+display: none;
+z-index: 999;
+border-top: 3px solid #c8102e;
+}
+
+/* Enlaces del submenú */
+.submenu li a {
+display: block;
+padding: 12px 20px;
+color: #ffffff; /* TEXTO BLANCO */
+font-weight: 600;
+transition: background-color 0.25s ease;
+}
+
+/* Hover correcto */
+.submenu li a:hover {
+background-color: #c8102e; /* rojo Itzulia */
+color: #ffffff; /* mantener blanco */
+}
+
+/* Mostrar submenú */
+.dropdown:hover .submenu {
+display: block;
+}
+
+/* MENU DESPLEGABLE 2 */
+/* Dropdown 2 */
+.dropdown2 {
+position: relative;
+}
+
+/* Submenú 2 */
+.submenu2 {
+position: absolute;
+top: 120%;
+left: 0;
+background-color: rgb(255, 255, 255); /* negro transparente */
+list-style: none;
+padding: 6px 0;
+margin: 0;
+min-width: 200px;
+display: none;
+z-index: 999;
+border-top: 3px solid #c8102e;
+}
+
+/* Enlaces */
+.submenu2 li a {
+display: block;
+padding: 12px 20px;
+color: #ffffff; /* blanco */
+text-decoration: none;
+font-weight: 600;
+transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+/* Mostrar submenú */
+.dropdown2:hover .submenu2 {
+display: block;
+}
+/* ----------------------------------------------------------------------------------------------- */
+
+/* Logo centrado */
+.logo {
+  text-align: center;
+}
+
+.logo img {
+  width: 140px;
+  height: auto;
+}
+
+/* Hero */
+.hero {
+  background: url('https://itzulia.eus/wp-content/uploads/2025/04/sprintcyclingagency_9017869_1_2000px.jpg') center/cover no-repeat;
+  background-attachment: fixed; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow-x: hidden; 
+  overflow-y: hidden; 
+  height: 90vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.hero-text {
+  position: relative;
+  color: #fff;
+  text-align: center;
+  max-width: 700px;
+  z-index: 2;
+}
+
+.hero-text h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #c8102e;
+  color: #fff;
+  padding: 10px 25px;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  background-color: #a00e26;
+}
+
+/* Secciones */
+.content {
+  padding: 60px 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  color: #c8102e;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+/* Pie */
+footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 45px;
+}
+.footer-equipos {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: #aaa;
+  margin-top: 61px;
+}
+
+/* Sección Origen, Presente y Futuro */
+.historia-itzulia {
+  display: flex;
+  justify-content: center;
+  align-items: stretch;
+  gap: 20px;
+  padding: 60px 5%;
+  background-color: #f8f8f8;
+}
+
+.bloque {
+  position: relative;
+  flex: 1;
+  height: 380px;
+  background-size: cover;
+  background-position: center;
+  border-radius: 15px;
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bloque:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.overlay-bloque {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.55);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.overlay-bloque h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.overlay-bloque p {
+  font-size: 1em;
+  max-width: 320px;
+}
+
+/* --- Sección de Video en la página de inicio --- */
+.video-itzulia {
+  padding: 80px 5%;
+  text-align: center;
+  position: relative;
+}
+
+.video-itzulia h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.2em;
+  color: #c8102e;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  aspect-ratio: 16/9;
+  overflow: hidden;
+  border-radius: 15px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.25);
+}
+
+.video-container iframe {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border: none;
+  top: 0;
+  left: 0;
+}
+
+/* Página de etapas */
+.contenedor-etapas {
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.contenedor-etapas h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #c8102e;
+  margin-top: 125px; /* baja el título respecto al logo */
+}
+
+.grid-etapas {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /*  3 columnas exactas */
+  gap: 25px;
+}
+
+.etapa {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 220px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.etapa:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+/* Menú negro con hover rojo solo en esta página */
+.etapas-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.etapas-page .nav-links a:hover {
+  color: #c8102e;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.overlay h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.overlay p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Menú negro con hover rojo solo en esta página */
+.equipos-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.equipos-page .nav-links a:hover {
+  color: #c8102e;
+}
+
+/* Página de equipos */
+.contenedor-equipos {
+  padding: 40px 5%;
+  text-align: center;
+}
+
+.contenedor-equipos h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  color: #c8102e;
+  margin-top: 125px; /* baja el título respecto al logo */
+}
+
+.grid-equipos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.equipo {
+  position: relative;
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.equipo:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  color: white;
+  text-align: center;
+  padding: 15px;
+}
+
+.overlay h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.5em;
+  margin-bottom: 5px;
+}
+
+.overlay h2 a {
+  color: white;
+  text-decoration: none;
+}
+
+.overlay h2 a:hover {
+  color: #c8102e;
+}
+
+.overlay p {
+  font-size: 1em;
+  margin: 0;
+}
+
+/* Pagina Equipos Tablas */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #fff;
+  color: #111;
+  margin: 0;
+  padding: 0;
+}
+
+.equipo-detalle {
+  padding: 60px 8%;
+  text-align: center; /* Centra el texto */
+}
+
+.equipo-detalle h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #000;
+  margin-bottom: 40px;
+  text-align: center; /* Centra el título */
+  margin-top: 100px; /* baja el título respecto al logo */
+}
+
+.equipo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+  gap: 50px;
+  flex-wrap: wrap;
+  text-align: left; 
+}
+
+.equipo-imagen img {
+  width: 280px;
+  max-width: 100%;
+  display: block;
+  margin: 0 auto; /* Centra la imagen */
+}
+
+.equipo-tabla {
+  display: flex;
+  justify-content: center; /* Centra la tabla */
+}
+
+.equipo-tabla table {
+  border-collapse: collapse;
+  width: 480px;
+  max-width: 100%;
+  font-size: 15px;
+}
+
+.equipo-tabla th {
+  background-color: #c8102e;
+  color: white;
+  font-family: 'Staatliches', sans-serif;
+  padding: 10px;
+  text-align: left;
+}
+
+.equipo-tabla td {
+  border: 1px solid #ddd;
+  padding: 8px 12px;
+}
+
+.equipo-tabla tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.equipo-tabla tr:hover {
+  background-color: #f1f1f1;
+}
+
+.director {
+  background-color: #eee;
+  font-weight: bold;
+  text-align: left;
+}
+
+ #tabla-equipo {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  font-size: 14px;
+  margin-top: 314px;
+}
+
+/* Pagina Clasificacion */
+.clasificacion {
+  padding: 60px 5%;
+  text-align: center;
+  margin-top: 101px;
+}
+
+.clasificacion h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #c8102e;
+  margin-bottom: 40px;
+  text-transform: uppercase;
+}
+
+.tabla-clasificacion {
+  display: flex;
+  justify-content: center;
+  overflow-x: auto;
+}
+
+.tabla-clasificacion table {
+  border-collapse: collapse;
+  width: 80%;
+  max-width: 1000px;
+  font-size: 15px;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.tabla-clasificacion th {
+  background-color: #c8102e;
+  color: white;
+  font-family: 'Staatliches', sans-serif;
+  padding: 12px;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.tabla-clasificacion td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 15px;
+  text-align: center;
+}
+
+.tabla-clasificacion tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+
+.tabla-clasificacion tr:hover {
+  background-color: #f1f1f1;
+  transition: background-color 0.3s ease;
+}
+
+.tabla-clasificacion td:first-child {
+  font-weight: bold;
+  color: #c8102e;
+}
+
+/* Menú negro con hover rojo solo en esta página */
+.clasificacion-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.clasificacion-page .nav-links a:hover {
+  color: #c8102e;
+}
+
+/* Página de Noticias */
+.noticias-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.noticias-page .nav-links a:hover {
+  color: #c8102e;
+}
+
+.contenedor-noticias {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.contenedor-noticias h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #c8102e;
+  margin-bottom: 40px;
+  margin-top: 125px; /* baja el título respecto al header */
+}
+
+.link-noti{
+font-family:'Staatliches', sans-serif;
+
+text-align: center;
+}
+
+.link-noti a{
+text-decoration: none;
+color: #c8102e;
+font-size: 1.5em;
+
+}
+.space{
+  padding-top: 80px;
+}
+
+.space2{
+  padding-top: 25px;
+}
+
+.link-noti a:hover{
+text-decoration: none;
+color: #000;
+}
+
+.grid-noticias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.noticia {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  text-align: left;
+}
+
+.noticia:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 18px rgba(0,0,0,0.2);
+}
+
+.noticia img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.texto-noticia {
+  padding: 20px;
+}
+
+.texto-noticia h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.4em;
+  color: #c8102e;
+  margin-bottom: 10px;
+}
+
+.texto-noticia p {
+  font-size: 0.95em;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Pagina Patrocinadores */
+.patrocinadores-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.patrocinadores-page .nav-links a:hover {
+  color: #c8102e;
+}
+
+.contenedor-patrocinadores {
+  padding: 140px 5% 60px;
+  text-align: center;
+}
+
+.contenedor-patrocinadores h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+  color: #c8102e;
+  margin-top: 30px; /* baja el título respecto al header */
+}
+
+.patrocinador {
+  padding: 20px 0;
+}
+
+.patrocinador img {
+  width: 220px;
+  height: auto;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease;
+}
+
+.patrocinador img:hover {
+  transform: scale(1.1);
+}
+
+.patrocinador h2 {
+  font-family: 'Staatliches', sans-serif;
+  color: #111;
+  font-size: 1.5em;
+  margin-top: 10px;
+}
+
+hr {
+  border: none;
+  border-top: 2px solid #c8102e;
+  width: 70%;
+  margin: 20px auto;
+}
+
+/* Pagina Palmares */
+.palmares-page .nav-links a {
+  color: #000;
+  transition: color 0.3s ease;
+}
+
+.palmares-page .nav-links a:hover {
+  color: #c8102e;
+}
+.contenedor-palmares {
+  padding: 140px 5% 80px;
+  text-align: center;
+}
+
+.anyo{
+  color: #c8102e;
+}
+
+.contenedor-palmares h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #c8102e;
+  margin-bottom: 40px;
+  margin-top: 30px; /* baja el título respecto al header */
+}
+
+/* Tabla */
+.tabla-container {
+  overflow-x: auto;
+  margin: 0 auto;
+  max-width: 900px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  border-radius: 10px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fdfdfd;
+}
+
+thead {
+  background-color: #c8102e;
+  color: white;
+  font-family: 'Staatliches', sans-serif;
+}
+
+th, td {
+  padding: 10px 15px;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* Página Challenge */
+.challenge-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 140px 5% 80px;
+  text-align: center;
+}
+
+.challenge-container h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #c8102e;
+  margin-bottom: 40px;
+  margin-top: 22px;
+}
+
+.challenge-text {
+  font-size: 1.1em;
+  max-width: 800px;
+  margin: 0 auto 50px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Galería de imágenes */
+.challenge-galeria {
+  display: flex;
+  gap: 25px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: -35px;
+}
+
+.challenge-img {
+  flex: 1;
+  min-width: 250px;
+  max-width: 350px;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.challenge-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+}
+
+.challenge-img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .challenge-container h1 {
+    font-size: 2.2em;
+  }
+
+  .challenge-img img {
+    height: 180px;
+  }
+}
+
+/* Challenge Fecha */
+.challenge-date {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.challenge-date .save {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 2px;
+  color: #777;
+  margin-bottom: 5px;
+}
+
+.challenge-date .day {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.8em;
+  color: #c8102e;
+  margin: 5px 0;
+}
+
+.challenge-date .year {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2em;
+  color: #111;
+}
+
+/* Rutas Challenge */
+.challenge-rutas {
+  margin-top: 80px;
+  text-align: center;
+}
+
+.challenge-rutas h2 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #111;
+  margin-bottom: 50px;
+}
+
+.challenge-rutas h2 span {
+  color: #c8102e;
+}
+
+/* Contenedor rutas */
+.rutas-container {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.ruta-card {
+  background: #111;
+  color: #fff;
+  width: 320px;
+  padding: 35px 25px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+  transition: transform 0.3s ease;
+}
+
+.ruta-card:hover {
+  transform: translateY(-10px);
+}
+
+.ruta-card h3 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 25px;
+}
+
+.ruta-card h3 span {
+  color: #c8102e;
+}
+
+/* Datos */
+.ruta-info {
+  margin-bottom: 20px;
+}
+
+.dato {
+  font-size: 0.9em;
+  color: #ccc;
+}
+
+.numero {
+  font-size: 1.6em;
+  font-weight: bold;
+}
+
+.numero span {
+  font-size: 0.6em;
+  color: #aaa;
+}
+
+/* Botón */
+.btn-ruta {
+  display: inline-block;
+  margin-top: 20px;
+  padding: 10px 25px;
+  background: #c8102e;
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.btn-ruta:hover {
+  background: #a00e26;
+}
+
+/* BLOQUE ESTILO MAILLOT */
+.form-bloquemaillot {
+  border: 3.5px solid #c8102e;
+  border-radius: 15px;
+  padding: 25px 0px 30px;
+  margin: 40px auto;
+}
+.form-bloquemaillot legend {
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 0 10px;
+}
+
+/* IMAGEN GUIA TALLAS MAILLOT */
+/* Imagen pequeña */
+.img-pequena {
+  max-width: 180px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+/* Fondo oscuro centrado */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.75);
+  display: none;
+  justify-content: center;
+  align-items: center;
+  z-index: 3000;
+}
+
+/* Mostrar modal */
+.modal:target {
+  display: flex;
+}
+
+/* Imagen grande */
+.img-grande {
+  max-width: 80%;
+  max-height: 80%;
+  background: #fff;
+  border-radius: 10px;
+}
+
+/* Botón cerrar */
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #fff;
+  font-size: 30px;
+  text-decoration: none;
+}
+
+/* Bloque de Terminos */
+.terminos-texto {
+  font-size: 0.85em;
+  color: #444;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.form-rowterminos, .form-rowinfo {
+  display: grid;
+  text-align: left;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.espacio {
+  padding-bottom: 8px;
+}
+
+/* Bloque acciones finales */
+.form-acciones {
+  border: 1.5px solid #c8102e;
+  border-radius: 9px;
+  padding: 25px;
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+/* Botones */
+.acciones-botones {
+  display: flex;
+  gap: 12px;
+}
+
+.acciones-botones button {
+  padding: 10px 18px;
+  font-size: 0.9em;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid #c8102e;
+  transition: all 0.3s ease;
+}
+
+/* Botón cancelar */
+.btn-cancelar {
+  color: #c8102e;
+}
+
+.btn-cancelar:hover {
+  background: #f5f5f5;
+}
+
+/* Botón añadir persona */
+.btn-secundario {
+  color: #c8102e;
+}
+
+.btn-secundario:hover {
+  background: #c8102e;
+  color: #fff;
+}
+
+/* Botón principal */
+.btn-principal {
+  background: #c8102e;
+  color: #fff;
+  font-weight: 600;
+}
+
+.btn-principal:hover {
+  background: #a00e26;
+}
+
+/* Texto inferior */
+.info-impuestos {
+  font-size: 0.75em;
+  color: #666;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .challenge-rutas h2 {
+    font-size: 2em;
+  }
+
+  .ruta-card {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+/* FORMULARIO CHALLENGE */
+/* ===== CONTENEDOR GENERAL ===== */
+.challenge-form h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  margin-top: -60px;
+  color: #c8102e;
+}
+
+.precio {
+  text-align: center;
+  font-size: 1.1em;
+  margin: 0 0 40px;
+}
+
+.challenge-form {
+  padding: 140px 0 80px;
+}
+
+.challenge-form form {
+  margin: 0 auto;
+  display: block;
+  max-width: 760px;
+}
+
+.principal {
+  display: grid;
+}
+
+/* ===== FIELDSET ITZULIA ===== */
+.form-bloque {
+  border: 3.5px solid #c8102e;
+  border-radius: 15px;
+  padding: 25px 30px 30px;
+  margin: 40px auto;
+}
+
+/* Título del bloque */
+.form-bloque legend {
+  font-family: 'Poppins', sans-serif;
+  font-size: 0.95em;
+  font-weight: 600;
+  padding: 0 10px;
+  color: #000;
+}
+
+/* ===== FILA UNIVERSAL ===== */
+.form-row {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-bottom: 14px;
+}
+.form-row,
+.form-bloque {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/* Pregunta */
+.form-row label {
+  width: 260px;
+  text-align: right;            
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* Respuestas */
+.form-row > div,
+.form-row > input,
+.form-row > select {
+  flex: 1;
+}
+
+/* Radios */
+.radio-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.radio-group label {
+  text-align: left;
+  font-weight: normal;
+}
+
+/* ===== GRID DATOS PERSONALES ===== */
+.form-grid {
+  display: grid;
+  grid-template-columns: 260px 120px 1fr;
+  gap: 14px 12px;
+  align-items: center;
+}
+
+/* Etiquetas grid */
+.form-grid label {
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+/* ===== INPUTS ===== */
+input,
+select {
+  padding: 7px 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  font-size: 0.9em;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Input largo */
+.form-grid input[type="text"] {
+  max-width: 320px;
+}
+
+/* ===== FECHA ===== */
+.fecha-nacimiento {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+  margin-top: 14px;
+}
+
+.fecha-nacimiento label {
+  width: 260px;
+  text-align: right;
+  font-weight: 600;
+  font-size: 0.9em;
+}
+
+.fecha-selects {
+  display: flex;
+  gap: 10px;
+}
+
+.fecha-selects select {
+  width: 90px;
+}
+
+/* ===== FOTO ===== */
+.form-row input[type="file"] {
+  font-size: 0.85em;
+  margin-top: 12px;
+}
+
+/* ===== BOTÓN ===== */
+.btn-form {
+  display: block;
+  margin: 40px auto 0;
+  background-color: #c8102e;
+  color: #fff;
+  padding: 10px 32px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.btn-form:hover {
+  background-color: #a00e26;
+}
+
+#dni {
+  border: 2px solid #ccc;
+  padding: 8px;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#dni:focus {
+  border-color: #c8102e;
+  box-shadow: 0 0 8px rgba(255, 0, 0, 0.5);
+  outline: none;
+}
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* ======== MENU RESPONSIVE PAGINA INICIO ======== */
+/* Hamburguesa oculta en desktop */
+.menu-icon {
+  display: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+}
+
+#menu-toggle {
+  display: none;
+}
+
+/* ···· TABLET ···· */
+@media (max-width: 1024px) {
+
+  .navbar {
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    gap: 15px;
+  }
+
+  .nav-links a {
+    font-size: 15px;
+  }
+
+  .logo img {
+    height: 75px;
+  }
+}
+
+/* ···· MOVIL ···· */
+@media (max-width: 500px) {
+
+  /* Mostrar icono hamburguesa */
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links.left,
+  .nav-links.right {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 20px 0;
+    display: none;
+  }
+
+  .nav-links.left {
+    top: 100%;
+  }
+
+  .nav-links.right {
+    top: calc(100% + 180px); /* debajo del primero */
+    margin-top: 67px;
+  }
+
+  #menu-toggle:checked ~ .nav-links.left,
+  #menu-toggle:checked ~ .nav-links.right {
+    display: flex;
+  }
+
+  .submenu {
+    display: none;
+    position: absolute;
+    background-color: black;
+    list-style: none;
+    padding: 10px 0;
+  }
+
+  .dropdown:hover .submenu {
+    display: block;
+  }
+
+  /* El dropdown deja de ser flotante */
+  .dropdown {
+    width: 100%;
+    text-align: center;
+  }
+
+  .submenu {
+    display: flex;
+    position: static;
+    width: 100%;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #111;
+    padding: 10px 0;
+    margin: 0;
+  }
+
+  /* Mostrar submenu al pulsar */
+  .dropdown:focus-within .submenu,
+  .dropdown:hover .submenu {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .submenu li a {
+    font-size: 16px;
+    opacity: 0.85;
+  }
+
+  .logo {
+    margin: 0 auto;
+  }
+
+  .nav-links a {
+    font-size: 18px;
+  }
+}
+/* =========================== */
+/* ============= RESPONSIVE BLOQUES INICIO ============== */
+@media (max-width: 1024px) {
+
+  .historia-itzulia {
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .bloque {
+    flex: 0 0 48%;   /* 2 bloques por fila */
+    min-height: 360px;
+  }
+
+  .overlay-bloque h2 {
+    font-size: 24px;
+  }
+
+  .overlay-bloque p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 420px) {
+
+  .historia-itzulia {
+    flex-direction: column;
+    padding: 40px 20px;
+  }
+
+  .bloque {
+    width: 100%;
+    min-height: 300px;
+  }
+
+  .overlay-bloque {
+    padding: 20px;
+  }
+
+  .overlay-bloque h2 {
+    font-size: 22px;
+  }
+
+  .overlay-bloque p {
+    font-size: 14px;
+  }
+}
+/* ------------------------------------------------------------------------------------------------------------ */
+/* PAGINAS OTRAS CONSULTAS */
+
+/* Contenedor */
+.consultas-container {
+  padding: 120px 5% 60px;
+  text-align: center;
+}
+
+.consultas-container h1 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 2.5em;
+  color: #c8102e;
+  margin-bottom: 40px;
+  margin-top: 66px;
+}
+
+/* Grid */
+.consultas-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+/* Caja */
+.consulta-box {
+  background-color: #1c1c1c;
+  padding: 25px;
+  border-radius: 10px;
+  width: 225px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+}
+
+/* Títulos */
+.consulta-box h3 {
+  font-family: 'Staatliches', sans-serif;
+  margin-bottom: 10px;
+  color: white;
+}
+
+/* Inputs */
+.consulta-box input,
+.consulta-box select {
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+/* Botones */
+.consulta-box button {
+  font-family: 'Staatliches', sans-serif;
+  background-color: #c8102e;
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.consulta-box button:hover {
+  background-color: #a00e26;
+}
+
+/* Resultado */
+.resultado {
+  margin-top: 50px;
+  color: white;
+  background-color: #1c1c1c;
+  padding: 30px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 1.1em;
+}
+/* Js texto rojo resultado */
+#rojo{
+  color: #c8102e;
+}
+
+/* RESPONSIVE */
+
+/* Tablet */
+@media (max-width: 900px) {
+  .consultas-grid {
+    gap: 15px;
+  }
+
+  .consulta-box {
+    width: 45%;
+  }
+}
+
+/* Móvil */
+@media (max-width: 600px) {
+  .consultas-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .consulta-box {
+    width: 90%;
+  }
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------ */
+/* FOOTER GENERAL */
+.footer {
+  background-color: #252525;
+  color: #fff;
+  padding: 50px 8% 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 40px;
+}
+
+/* LOGOS */
+.footer-logos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+.footer-logos img {
+  max-width: 160px;
+  margin: 10px 0;
+}
+
+/* ENLACES */
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  gap: 80px;
+  text-align: center;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  margin-bottom: 10px;
+  transition: color 0.3s;
+}
+
+.footer-links a:hover {
+  color: #c8102e;
+}
+
+/* REDES SOCIALES */
+.footer-socials {
+  flex: 1;
+  text-align: center;
+  min-width: 180px;
+}
+
+.footer-socials h3 {
+  font-family: 'Staatliches', sans-serif;
+  font-size: 1.2em;
+  letter-spacing: 1px;
+  margin-bottom: 15px;
+}
+
+.social-icons a {
+  color: #c8102e;
+  font-size: 1.5em;
+  margin: 0 10px;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.social-icons a:hover {
+  color: #fff;
+  transform: scale(1.1);
+}
+
+.footer-bottom {
+  border-top: 1px solid #333;
+  text-align: center;
+  padding-top: 15px;
+  font-size: 0.9em;
+  color: #aaa;
+}

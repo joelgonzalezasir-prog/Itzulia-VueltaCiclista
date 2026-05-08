@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Clasificación - Itzulia 2026</title>
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+<body class="clasificacion-page">
+
+  <!-- Encabezado -->
+  <header>
+    <div class="top-bar">
+      <div class="socials">
+        <a href="https://www.facebook.com/ehitzulia"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ehitzulia"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/ehitzulia/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ehitzulia"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCGxcS9Lz3VvYD1WJciBgR0w"><i class="fab fa-youtube"></i></a>
+      </div>
+      <div class="languages">
+        <a href="#">ES</a> | <a href="#">EU</a> | <a href="#">EN</a>
+      </div>
+    </div>
+
+    <nav class="navbar2">
+      <!-- Botón hamburguesa -->
+      <input type="checkbox" id="menu-toggle">
+
+      <ul class="nav-links left">
+        <li><a href="etapas.html">Etapas</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+      
+        <li class="dropdown2">
+          <a href="#">Carreras ▾</a>
+          <ul class="submenu2">
+            <li><a href="clasificacion.html">Clasificaciones</a></li>
+            <li><a href="challenge.html">Challenge</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="logo">
+         <a href="index.html"> <img src="img/Itzulia_Logo_negro-generico.png" alt="Itzulia Logo"></a>
+      </div>
+
+      <ul class="nav-links right">
+
+        <li class="dropdown2">
+          <a href="noticias.html">Noticias ▾</a>
+          <ul class="submenu2">
+            <li><a href="otrasconsultas.html">Otras Consultas</a></li>
+          </ul>
+        </li>
+
+        <li><a href="palmares.html">Palmarés</a></li>
+        <li><a href="patrocinadores.html">Patrocinadores</a></li>
+      </ul>
+
+      <label for="menu-toggle" class="menu-icon">
+        <i class="fas fa-bars"></i>
+      </label>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <main class="challenge-container">
+
+    <h1>Itzulia Basque Challenge</h1>
+
+      <p class="challenge-text">
+      La <strong>Itzulia Basque Challenge</strong> es una prueba cicloturista que permite a los aficionados
+      vivir la experiencia de la Itzulia Basque Country recorriendo algunas de sus etapas más emblemáticas.
+      El evento se celebrará en 2026 y reunirá a ciclistas de todo el mundo para disfrutar del ciclismo,
+      la naturaleza y la exigencia del terreno vasco.
+    </p>
+
+    <div class="challenge-galeria">
+      <div class="challenge-img">
+        <img src="img/challenge1.jpg" alt="Itzulia Basque Challenge Salida">
+      </div>
+      <div class="challenge-img">
+        <img src="img/challenge2.jpg" alt="Ciclistas en la Itzulia Basque Challenge">
+      </div>
+      <div class="challenge-img">
+        <img src="img/challenge3.jpg" alt="Meta Itzulia Basque Challenge">
+      </div>
+    </div>
+  </main>
+
+    <div class="challenge-date">
+      <p class="save">SAVE THE DATE</p>
+      <p class="day">12 de abril</p>
+      <p class="year">2026</p>
+    </div>
+
+  <section class="challenge-rutas">
+
+  <h2>ELIGE ENTRE<br><span>DOS RECORRIDOS</span></h2>
+
+  <div class="rutas-container">
+
+    <!-- WORLD TOUR -->
+    <div class="ruta-card">
+      <h3>RECORRIDO<br><span>WORLD TOUR</span></h3>
+
+      <div class="ruta-info">
+        <p class="dato">Distancia</p>
+        <p class="numero">133.8 <span>km</span></p>
+      </div>
+
+      <div class="ruta-info">
+        <p class="dato">Desnivel acumulado</p>
+        <p class="numero">+ 3.000 <span>m</span></p>
+      </div>
+
+      <a href="#" class="btn-ruta">VER MÁS</a>
+    </div>
+
+    <!-- MEDIO FONDO -->
+    <div class="ruta-card">
+      <h3>RECORRIDO<br><span>MEDIO FONDO</span></h3>
+
+      <div class="ruta-info">
+        <p class="dato">Distancia</p>
+        <p class="numero">70.3 <span>km</span></p>
+      </div>
+
+      <div class="ruta-info">
+        <p class="dato">Desnivel acumulado</p>
+        <p class="numero">+ 1.650 <span>m</span></p>
+      </div>
+
+      <a href="#" class="btn-ruta">VER MÁS</a>
+    </div>
+  </div>
+
+  <!-- FORMULARIO INSCRIPCION ITZULIA CHALLENGE -->
+<section class="challenge-form">
+  <h2>Formulario de Inscripción</h2>
+    <div class="precio">
+      <span>General:</span> <strong>70,00 €</strong>
+    </div>
+  <form>
+
+    <!-- BLOQUE CHALLENGE -->
+    <section class="principal">
+      <div class="form-row">
+        <label>¿En qué recorrido participas? *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="recorrido" required> Medio Fondo 80,6 km</label>
+          <label><input type="radio" name="recorrido"> World Tour 137,8 km</label></div>
+      </div>
+
+      <div class="form-row">
+        <label>¿Estás federad@ en la RFEC? *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="federado" required> Sí</label>
+          <label><input type="radio" name="federado"> No (13,00 €)</label>
+        </div>
+      </div>
+
+      <div class="form-row">
+        <label>¿Perteneces a algún club? *</label>
+        <div class="radio-group">
+          <label><input type="radio" name="club" required> No (Independiente)</label>
+          <label><input type="radio" name="club"> Sí</label>
+        </div>
+      </div>
+    </section>
+
+    <!-- BLOQUE DATOS PERSONALES -->
+    <fieldset class="form-bloque">
+      <legend>Datos personales</legend>
+
+      <div class="form-row">
+        <label>Documento *</label>
+        <select required>
+          <option>DNI</option>
+          <option>NIE</option>
+          <option>Pasaporte</option>
+        </select>
+        <input type="text" id="dni" placeholder="Introduce el número" required>
+      </div>
+
+        <div class="form-row">
+        <label>Género *</label>
+        <select required>
+          <option value="">Selecciona</option>
+          <option>Masculino</option>
+          <option>Femenino</option>
+          <option>Otro</option>
+        </select>
+        </div>
+        
+        <div class="form-row">
+        <label>Nombre *</label>
+        <input type="text" required>
+        </div>
+
+        <div class="form-row">
+        <label>Primer apellido *</label>
+        <input type="text" required>
+        </div>
+
+        <div class="form-row">
+        <label>Segundo apellido *</label>
+        <input type="text" required>
+        </div>
+      
+
+      <!-- FECHA -->
+      <div class="fecha-nacimiento">
+        <label>Fecha de nacimiento *</label><div class="fecha-selects">
+          <select required>
+            <option>Día</option>
+            <option>1</option>
+            <option>2</option>
+            <option>3</option>
+            <option>4</option>
+            <option>5</option>
+            <option>6</option>
+            <option>7</option>
+            <option>8</option>
+            <option>9</option>
+            <option>10</option>
+            <option>11</option>
+            <option>12</option>
+            <option>13</option>
+            <option>14</option>
+            <option>15</option>
+            <option>16</option>
+            <option>17</option>
+            <option>18</option>
+            <option>19</option>
+            <option>20</option>
+            <option>21</option>
+            <option>22</option>
+            <option>23</option>
+            <option>24</option>
+            <option>25</option>
+            <option>26</option>
+            <option>27</option>
+            <option>28</option>
+            <option>29</option>
+            <option>30</option>
+            <option>31</option>
+          </select>
+          <select required>
+            <option>Mes</option>
+            <option>Enero</option>
+            <option>Febrero</option>
+            <option>Marzo</option>
+            <option>Abril</option>
+            <option>Mayo</option>
+            <option>Junio</option>
+            <option>Julio</option>
+            <option>Agosto</option>
+            <option>Septiembre</option>
+            <option>Octubre</option>
+            <option>Noviembre</option>
+            <option>Diciembre</option>
+          </select>
+          <select required>
+            <option>Año</option>
+            <option>2008</option>
+            <option>2007</option>
+            <option>2006</option>
+            <option>2005</option>
+            <option>2004</option>
+            <option>2003</option>
+            <option>2002</option>
+            <option>2001</option>
+            <option>2000</option>
+            <option>1999</option>
+            <option>1998</option>
+            <option>1997</option>
+            <option>1996</option>
+            <option>1995</option>
+            <option>1994</option>
+            <option>1993</option>
+            <option>1992</option>
+            <option>1991</option>
+            <option>1990</option>
+            <option>1989</option>
+            <option>1988</option>
+            <option>1987</option>
+            <option>1986</option>
+            <option>1985</option>
+            <option>1984</option>
+            <option>1983</option>
+            <option>1982</option>
+            <option>1981</option>
+            <option>1980</option>
+            <option>1979</option>
+            <option>1978</option>
+            <option>1977</option>
+            <option>1976</option>
+            <option>1975</option>
+            <option>1974</option>
+            <option>1973</option>
+            <option>1972</option>
+            <option>1971</option>
+            <option>1970</option>
+            <option>1969</option>
+            <option>1968</option>
+            <option>1967</option>
+            <option>1966</option>
+            <option>1965</option>
+            <option>1964</option>
+            <option>1963</option>
+            <option>1962</option>
+            <option>1961</option>
+            <option>1960</option>
+            <option>1959</option>
+            <option>1958</option>
+            <option>1957</option>
+            <option>1956</option>
+            <option>1955</option>
+            <option>1954</option>
+            <option>1953</option>
+            <option>1952</option>
+            <option>1951</option>
+            <option>1950</option>
+          </select>
+        </div>
+      </div>
+
+      <!-- FOTO -->
+      <div class="form-row">
+        <label>Sube tu foto (tamaño carnet) *</label>
+        <input type="file" required>
+      </div>
+    </fieldset>
+    <!-- BLOQUE LOCALIZACIÓN -->
+<fieldset class="form-bloque">
+
+  <div class="form-row">
+    <label>Teléfono móvil *</label>
+    <div style="display:flex; gap:10px;">
+      <select style="max-width:135px;">
+        <option>España (+34)</option>
+        <option>Francia (+33)</option>
+        <option>Portugal (+351)</option>
+        <option>España (+34)</option>
+        <option>Francia (+33)</option>
+        <option>Portugal (+351)</option>
+        <option>Alemania (+49)</option>
+        <option>Italia (+39)</option>
+        <option>Reino Unido (+44)</option>
+        <option>Irlanda (+353)</option>
+        <option>Países Bajos (+31)</option>
+        <option>Bélgica (+32)</option>
+        <option>Suiza (+41)</option>
+        <option>Austria (+43)</option>
+        <option>Suecia (+46)</option>
+        <option>Noruega (+47)</option>
+        <option>Dinamarca (+45)</option>
+        <option>Finlandia (+358)</option>
+        <option>Polonia (+48)</option>
+        <option>República Checa (+420)</option>
+        <option>Hungría (+36)</option>
+        <option>Grecia (+30)</option>
+      </select>
+      <input type="text" required>
+    </div>
+  </div>
+
+  <div class="form-row">
+    <label>Teléfono de emergencia *</label>
+    <input type="text" required>
+  </div>
+
+  <div class="form-row">
+    <label>Dirección *</label>
+    <input type="text" required>
+  </div>
+
+  <div class="form-row">
+    <label>Código postal *</label>
+    <input type="text" required>
+  </div>
+
+  <div class="form-row">
+    <label>Población *</label>
+    <input type="text" required>
+  </div>
+
+  <div class="form-row">
+    <label>País / Provincia *</label>
+    <div style="display:flex; gap:10px;">
+      <select>
+        <option value="">España</option>
+        <option>Francia</option>
+        <option>Portugal</option>
+        <option>Alemania</option>
+        <option>Italia</option>
+        <option>Reino Unido</option>
+        <option>Irlanda</option>
+        <option>Países Bajos</option>
+        <option>Bélgica</option>
+        <option>Suiza</option>
+        <option>Austria</option>
+        <option>Suecia</option>
+        <option>Noruega</option>
+        <option>Dinamarca</option>
+        <option>Finlandia</option>
+        <option>Polonia</option>
+        <option>República Checa</option>
+        <option>Hungría</option>
+        <option>Grecia</option>
+        <option>España</option>
+      </select>
+      <select>
+        <option value="">Selecciona</option>
+        <option>Álava</option>
+        <option>Albacete</option>
+        <option>Alicante</option>
+        <option>Almería</option>
+        <option>Asturias</option>
+        <option>Ávila</option>
+        <option>Badajoz</option>
+        <option>Barcelona</option>
+        <option>Burgos</option>
+        <option>Cáceres</option>
+        <option>Cádiz</option>
+        <option>Cantabria</option>
+        <option>Castellón</option>
+        <option>Ciudad Real</option>
+        <option>Córdoba</option>
+        <option>Cuenca</option>
+        <option>Girona</option>
+        <option>Granada</option>
+        <option>Guadalajara</option>
+        <option>Gipuzkoa</option>
+        <option>Huelva</option>
+        <option>Huesca</option>
+        <option>Illes Balears</option>
+        <option>Jaén</option>
+        <option>A Coruña</option>
+        <option>La Rioja</option>
+        <option>Las Palmas</option>
+        <option>León</option>
+        <option>Lleida</option>
+        <option>Lugo</option>
+        <option>Madrid</option>
+        <option>Málaga</option>
+        <option>Murcia</option>
+        <option>Navarra</option>
+        <option>Ourense</option>
+        <option>Palencia</option>
+        <option>Pontevedra</option>
+        <option>Salamanca</option>
+        <option>Santa Cruz de Tenerife</option>
+        <option>Segovia</option>
+        <option>Sevilla</option>
+        <option>Soria</option>
+        <option>Tarragona</option>
+        <option>Teruel</option>
+        <option>Toledo</option>
+        <option>Valencia</option>
+        <option>Valladolid</option>
+        <option>Bizkaia</option>
+        <option>Zamora</option>
+        <option>Zaragoza</option>
+        <option>Ceuta</option>
+        <option>Melilla</option>
+      </select>
+    </div>
+  </div>
+</fieldset>
+<!-- BLOQUE MAIL -->
+<fieldset class="form-bloque">
+
+  <div class="form-row">
+    <label>Email *</label>
+    <input type="email" required>
+  </div>
+
+  <div class="form-row">
+    <label>Repite Email *</label>
+    <input type="email" required>
+  </div>
+
+  <p style="font-size:0.8em; margin-left:260px; color:#555;">
+    ATENCIÓN: Recibirás el justificante de inscripción y las comunicaciones del evento en este email.
+  </p>
+</fieldset>
+
+<!-- BLOQUE MAILLOT OFICIAL -->
+<fieldset class="form-bloquemaillot">
+  <legend>
+    Maillot Oficial Guia de Tallas
+  </legend>
+
+  <div class="form-row" style="align-items:flex-start;">
+    <label>Talla maillot oficial *</label>
+
+    <div style="display:flex; gap:30px;">
+
+      <!-- Imagen pequeña -->
+      <a href="#imagen-grande">
+        <img src="img/guia-tallas.png"
+            alt="Guía de tallas maillot"
+            class="img-pequena">
+      </a>
+
+      <!-- Modal -->
+      <div id="imagen-grande" class="modal">
+        <a href="#" class="cerrar">✕</a>
+        <img src="img/guia-tallas.png" class="img-grande">
+      </div>
+
+      <!-- Radios tallas -->
+      <div class="radio-group">
+        <label><input type="radio" name="talla_maillot" required> Mujer 2XS</label>
+        <label><input type="radio" name="talla_maillot"> Mujer XS</label>
+        <label><input type="radio" name="talla_maillot"> Mujer S</label>
+        <label><input type="radio" name="talla_maillot"> Mujer M</label>
+        <label><input type="radio" name="talla_maillot"> Mujer L</label>
+        <label><input type="radio" name="talla_maillot"> Mujer XL</label>
+        <label><input type="radio" name="talla_maillot"> Mujer 2XL</label>
+
+        <br>
+
+        <label><input type="radio" name="talla_maillot"> Hombre 2XS</label>
+        <label><input type="radio" name="talla_maillot"> Hombre XS</label>
+        <label><input type="radio" name="talla_maillot"> Hombre S</label>
+        <label><input type="radio" name="talla_maillot"> Hombre M</label>
+        <label><input type="radio" name="talla_maillot"> Hombre L</label>
+        <label><input type="radio" name="talla_maillot"> Hombre XL</label>
+        <label><input type="radio" name="talla_maillot"> Hombre 2XL</label>
+      </div>
+    </div>
+  </div>
+</fieldset>
+
+      <!-- BLOQUE TÉRMINOS -->
+      <fieldset class="form-bloque">
+
+        <p class="terminos-texto">
+          Acepto los términos y condiciones de contratación para el tratamiento de mis datos y confirmo haber leído y aceptado la
+          <strong>Política de Privacidad de NUONET GESTION, S.L.</strong> *
+        </p>
+
+          <div class="form-rowterminos">
+            <label class="espacio">
+              <input type="radio" name="terminos" required>
+              Sí acepto
+            </label>
+
+            <label class="espacio">
+              <input type="radio" name="terminos">
+              No, gracias
+            </label>
+          </div>
+
+        <p class="terminos-texto">
+          Deseo recibir información de eventos deportivos, ofertas y novedades de marcas colaboradoras. *
+        </p>
+
+        <div class="form-rowinfo">
+          <label class="espacio">
+            <input type="radio" name="info" required>
+            Acepto
+          </label>
+
+          <label class="espacio">
+            <input type="radio" name="info">
+            No Acepto
+          </label>
+        </div>
+      </fieldset>
+
+
+      <!-- BLOQUE ACCIONES FINALES -->
+      <div class="form-acciones">
+
+        <div class="acciones-botones">
+          <button class="btn-cancelar" type="button">Cancelar</button>
+          <button class="btn-secundario" type="button">Añadir a otra persona</button>
+          <button class="btn-principal" type="submit">Continuar</button>
+        </div>
+
+        <p class="info-impuestos">Importes con impuestos incluidos</p>
+
+      </div>
+</section>
+  <!-- Pie de página -->
+  <footer class="footer">
+  <div class="footer-container">
+
+    <!-- Columna izquierda: logos -->
+    <div class="footer-logos">
+      <img src="img/Itzulia_Logo_blanco-y-rojo-generico.png" alt="Itzulia Basque Country">
+      <img src="img/UCI-Footer-Itzulia.png" alt="UCI World Tour">
+    </div>
+
+    <!-- Columna centro: enlaces -->
+    <div class="footer-links">
+      <ul>
+        <li><a href="etapas.html">Etapas</a></li>
+        <li><a href="equipos.html">Equipos</a></li>
+        <li><a href="clasificacion.html">Clasificaciones</a></li>
+        <li><a href="challenge.html">Challenge</a></li>
+        <li><a href="noticias.html">Noticias</a></li>
+        <li><a href="palmares.html">Palmarés</a></li>
+        <li><a href="patrocinadores.html">Patrocinadores</a></li>
+      </ul>
+      <ul>
+        <li><a href="#">Política de privacidad</a></li>
+        <li><a href="#">Aviso Legal</a></li>
+      </ul>
+    </div>
+
+    <!-- Columna derecha: redes sociales -->
+    <div class="footer-socials">
+      <h3>SÍGUENOS</h3>
+      <div class="social-icons">
+        <a href="https://www.facebook.com/ehitzulia"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://x.com/ehitzulia"><i class="fab fa-x-twitter"></i></a>
+        <a href="https://www.instagram.com/ehitzulia/"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.tiktok.com/@ehitzulia"><i class="fab fa-tiktok"></i></a>
+        <a href="https://www.youtube.com/channel/UCGxcS9Lz3VvYD1WJciBgR0w"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>© 2025 Euskal Herriko Itzulia - Vuelta Ciclista al País Vasco | Web no oficial</p>
+  </div>
+</footer>
+
+</body>
+</html>

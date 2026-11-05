@@ -1,1 +1,1 @@
-Nuestra web de la itzulia.
+Se nos propuso crear una web para la itzulia y esta es nuestra propuesta.
